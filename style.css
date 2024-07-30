@@ -1,0 +1,296 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.top-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.top-header img{
+   width: 70px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+}
+.nav {
+    display: flex;
+    gap: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.nav a {
+    color:#474545;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.nav a:hover {
+    color: black;
+    text-decoration: underline;
+   
+}
+#freespirit{
+    color: orangered;
+}
+@media (max-width:600px){
+    .line{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+}
+.slider{
+    margin-top: 160px;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+.slides img {
+    height: 800px;
+    display: block;
+}
+
+.circles{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    gap:2rem
+}
+@media (max-width:600px){
+    .circles{
+        display: none;
+    }
+}
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid rgb(213, 213, 204);
+}
+#circle1{
+   background-image: url("https://overlaysnow.com/cdn/shop/files/tshirts_newSScircle.jpg?v=1721496965&width=400");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.newin{
+    text-align: center;
+}
+.newin h1{
+    font-size: 50px;
+}
+.tshirts{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.tshirtbox{
+    height: 700px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tshirtimage img{
+    height: 450px;
+    width: 300px;
+    border-radius: 8px;
+}
+.tshirtname h2{
+    font-size: 16px;
+}
+.size{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+}
+.sizebox{
+    height: 35px;
+    width: 41px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+.sizebox:hover{
+    background: #e8e2e2;
+    border-color: black;
+}
+.seasonpower h1{
+    text-align: center;
+    font-size: 40px;
+}
+.seasonpower-box{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+.spbox{
+    margin-top: 2rem;
+    width: 360px;
+    height: 480px;
+    
+}
+.spbox img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.spbox:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+.box{
+    background: #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#sidebar{
+    grid-area: sidebar;
+    background-image: url("https://cdn.shopify.com/s/files/1/0566/0839/1368/files/Mobile_Desktop_A.jpg?v=1718885668");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#c1{
+    grid-area: c1;
+    background-image: url("https://cdn.shopify.com/s/files/1/0566/0839/1368/files/Desktop_G.jpg?v=1718885972");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#c2{
+    grid-area: c2;
+    background-image: url("https://cdn.shopify.com/s/files/1/0566/0839/1368/files/Desktop_E.jpg?v=1718886109");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fashion-grid{
+    width: 94%;
+    height: 540px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    "sidebar sidebar  c1 c1"
+    "sidebar sidebar  c1 c1"
+    "sidebar sidebar  c2 c2"
+    "sidebar sidebar  c2 c2";
+}
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    background: #e2dddd;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-box .nav{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.footer-box h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-box p a {
+    color: black;
+
+}
+.footer-box a{
+    color: black;
+}
+.footer-box a:hover{
+  color: #585656;
+  text-decoration: none;
+}
+.footer-box input{
+    padding: 15px;
+    height: 50px;
+    width: 300px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.social-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sb{
+    border: 1px solid rgb(154, 151, 151);
+    padding: 12px;
+    color: rgb(91, 88, 88);
+}
+.sb:hover{
+    transition: 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    color: #fff;
+    background: black;
+    height: 65px;
+    -webkit-transition: 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -moz-transition: 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -ms-transition: 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -o-transition: 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.copyright h1{
+    text-align: center;
+    font-size: 15px;
+}
